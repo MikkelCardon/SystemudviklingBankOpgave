@@ -6,7 +6,7 @@ import Storage.Storage;
 public class TilstandeTest {
 
 	public static void main(String[] args) {
-
+	//01-12-2024
 		KontoType kontotype = Controller
 				.createKontoType(
 						"Ungdomskonto",
