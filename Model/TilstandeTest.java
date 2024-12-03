@@ -17,7 +17,7 @@ public class TilstandeTest {
 
 
         Controller.foretagTransaktion(k1, k2, 200);
-        Controller.foretagTransaktion(k1, k2, 800);
+        Controller.foretagTransaktion(k1, k2, -800);
         Controller.foretagTransaktion(k1, k2, 200);
         Controller.foretagTransaktion(k1, k2, 200);
         Controller.foretagTransaktion(k1, k2, 200);
