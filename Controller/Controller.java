@@ -43,6 +43,10 @@ public class Controller {
 
     public static Transaktion createTransaktion(Konto kontoFra, Konto kontoTil, int beløb) {
         Transaktion transaktion = null;
+        if (beløb < 0){
+            throw new RuntimeException("Du forsøger at overføre et negativt beløb");
+        }
+
         if (kontoFra.getTilstand() == Tilstand.AABEN && kontoTil.getTilstand() == Tilstand.AABEN) {
             transaktion = new Transaktion(kontoFra, kontoTil, beløb);
             kontoFra.addTransaktion(transaktion);
